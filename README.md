@@ -23,7 +23,6 @@ To enhance the model's generalization, a data transformation pipeline is applied
 4. **Color Jitter**: Adjusts the brightness, contrast, saturation, and hue slightly to help the model handle variations in lighting and colors.
 5. **Normalization**: The image is normalized to align with ImageNet's mean and standard deviation values, matching the ResNet50’s pre-trained parameters.
 
----
 
 ## 3. Training Process
 
