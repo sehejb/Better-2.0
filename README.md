@@ -2,8 +2,6 @@
 
 This report provides an overview of the `CustomCNN` model, the transformation pipeline, training process, and results. The `CustomCNN` model is built on a pre-trained ResNet50, fine-tuned for binary classification tasks.
 
----
-
 ## 1. Model Architecture
 
 The `CustomCNN` model leverages a pre-trained ResNet50 model as its base and enables training on all layers to fine-tune it for a specific classification task. The model removes the original final layer from ResNet50 and replaces it with custom fully connected layers:
