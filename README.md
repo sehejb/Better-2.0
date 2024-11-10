@@ -13,4 +13,12 @@ The `CustomCNN` model leverages a pre-trained ResNet50 model as its base and ena
   - ReLU activation function follows to introduce non-linearity.
   - Second layer reduces the output to 2, suitable for binary classification.
 
+## 2. Transformation Pipeline
 
+To enhance the model's generalization, a data transformation pipeline is applied to each image. This pipeline includes the following steps:
+
+1. **Random Crop**: Images are cropped to 196x196 pixels, providing a consistent input size.
+2. **Random Rotation**: Images are randomly rotated by up to 15 degrees to add variability.
+3. **Random Horizontal Flip**: Images are flipped horizontally with a 50% probability to introduce further variability.
+4. **Color Jitter**: Adjusts the brightness, contrast, saturation, and hue slightly to help the model handle variations in lighting and colors.
+5. **Normalization**: The image is normalized to align with ImageNet's mean and standard deviation values, matching the ResNet50’s pre-trained parameters.
