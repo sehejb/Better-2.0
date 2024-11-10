@@ -33,3 +33,10 @@ The model is trained using the following hyperparameters:
 - **Loss Function**: Cross-Entropy Loss, ideal for multi-class classification tasks.
 - **Optimizer**: Adam optimizer with a learning rate of `5e-5` and a weight decay of `0.005`, aimed at controlling overfitting.
 - **Epochs**: The model was trained over 3 epochs to minimize classification errors progressively.
+
+
+### Training Loss
+
+During training, the model showed a progressive decrease in loss values, which indicates improved model performance. Notable loss values from the final epoch are as follows:
+
+- Training loss values ranged from approximately 0.0344 to 0.1912 by the third epoch, demonstrating an overall trend toward convergence.
